@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greenfield School System</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css">
+  <style>
+    /* Additional styling just for the improved homepage */
+    #home {
+      background: linear-gradient(rgba(0,0,50,0.5), rgba(0,0,80,0.6)),
+                  url('https://images.unsplash.com/photo-1600880292203-757bb62b4baf') center/cover no-repeat;
+      color: white;
+      text-align: center;
+      padding: 160px 20px;
+    }
+    #home h1 {
+      font-size: 3rem;
+      font-weight: bold;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.5);
+    }
+    #home p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+      color: #e0e0e0;
+    }
+    #home .btn {
+      margin-top: 20px;
+      font-weight: 500;
+      border-radius: 30px;
+      padding: 10px 25px;
+    }
+  </style>
+</head>
+<body>
+
+<!-- NAVBAR -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-primary fixed-top shadow-sm">
+  <div class="container">
+    <a class="navbar-brand fw-bold" href="#">Greenfield School</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ms-auto">
+        <li class="nav-item"><a class="nav-link" href="#home">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#admission">Admission</a></li>
+        <li class="nav-item"><a class="nav-link" href="#faculty">Faculty</a></li>
+        <li class="nav-item"><a class="nav-link" href="#vision">Vision</a></li>
+        <li class="nav-item"><a class="nav-link" href="#subjects">Subjects</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- BEAUTIFUL HERO SECTION -->
+<section id="home">
+  <div class="container">
+    <h1>Welcome to Greenfield School</h1>
+    <p>Inspiring young minds to learn, grow, and lead with excellence.</p>
+    <a href="#admission" class="btn btn-light text-primary">Explore Admissions</a>
+  </div>
+</section>
+
+<!-- ADMISSION SECTION -->
+<section id="admission" class="py-5 bg-light">
+  <div class="container">
+    <h2 class="text-center mb-4 text-primary fw-bold">Admission Form</h2>
+    <form id="admissionForm" class="mx-auto" style="max-width: 600px;">
+      <div class="mb-3">
+        <label class="form-label">Full Name</label>
+        <input type="text" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Date of Birth</label>
+        <input type="date" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Email Address</label>
+        <input type="email" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Contact Number</label>
+        <input type="tel" class="form-control" required>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Grade Level Applying For</label>
+        <select class="form-select" required>
+          <option selected disabled>Select Grade</option>
+          <option>Grade 1</option>
+          <option>Grade 2</option>
+          <option>Grade 3</option>
+          <option>Grade 4</option>
+          <option>Grade 5</option>
+        </select>
+      </div>
+      <div class="mb-3">
+        <label class="form-label">Address</label>
+        <textarea class="form-control" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary w-100">Submit</button>
+    </form>
+    <div id="ackMsg" class="alert alert-success mt-3 text-center d-none">
+      Thank you for applying. Please prepare for your admission test. You will receive further information via email.
+    </div>
+  </div>
+</section>
+
+<!-- FACULTY SECTION -->
+<section id="faculty" class="py-5">
+  <div class="container">
+    <h2 class="text-center mb-4 text-primary fw-bold">Our Faculty</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="https://images.unsplash.com/photo-1607746882042-944635dfe10e" class="card-img-top" alt="Teacher 1">
+          <div class="card-body">
+            <h5 class="card-title">Mr. Ahmed Khan</h5>
+            <p class="card-text"><strong>Subject:</strong> Mathematics</p>
+            <p class="card-text text-muted">“I believe every student can master math with the right guidance and encouragement.”</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="https://images.unsplash.com/photo-1524504388940-b1c1722653e1" class="card-img-top" alt="Teacher 2">
+          <div class="card-body">
+            <h5 class="card-title">Ms. Ayesha Malik</h5>
+            <p class="card-text"><strong>Subject:</strong> English</p>
+            <p class="card-text text-muted">“Language empowers minds — my goal is to make students fall in love with words.”</p>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="card shadow-sm">
+          <img src="https://images.unsplash.com/photo-1521119989659-a83eee488004" class="card-img-top" alt="Teacher 3">
+          <div class="card-body">
+            <h5 class="card-title">Mr. Bilal Sheikh</h5>
+            <p class="card-text"><strong>Subject:</strong> Science</p>
+            <p class="card-text text-muted">“Science inspires curiosity and innovation — I teach through discovery and fun.”</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- VISION SECTION -->
+<section id="vision" class="py-5 bg-light">
+  <div class="container text-center">
+    <h2 class="text-primary fw-bold mb-3">Our Vision</h2>
+    <p class="lead">At Greenfield School, our vision is to nurture young minds into compassionate, confident, and creative leaders. We strive to provide quality education that promotes critical thinking, innovation, and a lifelong love of learning.</p>
+  </div>
+</section>
+
+<!-- SUBJECTS SECTION -->
+<section id="subjects" class="py-5">
+  <div class="container">
+    <h2 class="text-center text-primary fw-bold mb-4">Subjects Offered</h2>
+    <div class="table-responsive">
+      <table class="table table-bordered table-striped text-center align-middle">
+        <thead class="table-primary">
+          <tr>
+            <th>Subject</th>
+            <th>Description</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr><td>Mathematics</td><td>Develops logical reasoning and problem-solving skills.</td></tr>
+          <tr><td>English</td><td>Enhances communication, comprehension, and writing abilities.</td></tr>
+          <tr><td>Science</td><td>Explores the natural world through experiments and observation.</td></tr>
+          <tr><td>Computer Studies</td><td>Introduces programming, technology use, and digital literacy.</td></tr>
+          <tr><td>Social Studies</td><td>Teaches history, geography, and social responsibility.</td></tr>
+        </tbody>
+      </table>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="bg-primary text-white text-center py-3">
+  <p class="mb-1">© 2025 Greenfield School System</p>
+  <p>Email: info@greenfield.edu.pk | Phone: +92 300 1234567</p>
+  <div>
+    <a href="#" class="text-white mx-2"><i class="bi bi-facebook"></i></a>
+    <a href="#" class="text-white mx-2"><i class="bi bi-twitter"></i></a>
+    <a href="#" class="text-white mx-2"><i class="bi bi-instagram"></i></a>
+  </div>
+</footer>
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+<script>
+  document.getElementById("admissionForm").addEventListener("submit", function(event){
+    event.preventDefault();
+    document.getElementById("ackMsg").classList.remove("d-none");
+    this.reset();
+  });
+</script>
+
+</body>
+</html>
